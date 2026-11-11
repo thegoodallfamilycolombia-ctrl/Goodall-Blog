@@ -1,0 +1,14 @@
+# This repo publishes only the finished website in site/.
+# Everything else in this folder (raw photos/videos, PDFs, personal
+# drafts) stays local and is not tracked.
+/*
+!/site
+!/site/**
+!/.github
+!/.github/**
+!/.gitignore
+!/README.md
+
+# OS cruft, just in case
+.DS_Store
+**/.DS_Store
