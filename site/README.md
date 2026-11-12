@@ -5,18 +5,17 @@ Santa Marta, Colombia. No internet server or special software is required — it
 HTML files you can open in any web browser or upload to any web host.
 
 ## Pages
-- **index.html** — Home & Blog (hero, welcome, the First Entry, a featured video, prayer requests)
+- **index.html** — Home & Blog (hero, welcome, the First Entry, prayer requests)
 - **about.html** — About the family
 - **reports.html** — Monthly Mission Reports (PDFs), newest to oldest
-- **gallery.html** — Photo & video gallery
+- **gallery.html** — Photo gallery
 
 ## How to view it
 Double-click **index.html** to open it in your web browser. Use the menu at the top
 to move between pages.
 
-> Tip: A couple of things (embedded videos, the full-size photo pop-ups) work best
-> in a normal browser like Chrome or Safari, and when the whole `site` folder is kept
-> together.
+> Tip: The full-size photo pop-ups work best in a normal browser like Chrome or
+> Safari, and when the whole `site` folder is kept together.
 
 ## How to put it online (optional)
 Upload the entire `site` folder to any static web host — for example
@@ -30,9 +29,13 @@ site/
 ├── styles.css
 └── assets/
     ├── photos/    (family photos, .jpg)
-    ├── reports/   (monthly report PDFs + preview images)
-    └── video/     (video clips, .mp4)
+    └── reports/   (monthly report PDFs + preview images)
 ```
+
+> Video clips are not in the deployed site right now — IONOS Deploy Now's
+> hosting quota is too small for self-hosted video. The clips are saved
+> locally in `videos-for-youtube-later/` (next to `site/`, not inside it)
+> until they're uploaded to YouTube and embedded instead.
 
 ## Adding a NEW monthly report
 1. Put the new PDF in `assets/reports/` (e.g. `2026-07-report.pdf`).
@@ -47,10 +50,8 @@ site/
 Open `index.html` and duplicate the `<article class="article"> … </article>` block,
 then update the title, date, and text. Newest entries go at the top.
 
-## Notes on the photos & videos
-- Photos were resized for the web so pages load quickly. Your originals are untouched
-  in the main "Goodall Blog" folder.
-- Two vertical iPhone videos were converted to a web-friendly format (H.264 MP4) so they
-  play in every browser.
+## Notes on the photos
+- Photos were resized and compressed for the web (max 1280px, quality 65) to fit IONOS
+  Deploy Now's hosting quota. Your originals are untouched in the main "Goodall Blog" folder.
 
 Made with love from the coast of Colombia. 🇨🇴
